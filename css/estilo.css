@@ -1,0 +1,92 @@
+#prueba:hover{
+  filter: blur(5px);
+}
+#texto{
+    color: #000;
+}
+
+.imgG  .mask{
+	width: 300px; 
+	height:200px; 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	overflow: hidden; 
+}
+
+.mask h2{
+	text-transform: uppercase; 
+	color:#fff;
+	text-align: center; 
+	position: relative; 
+	font-size: 17px;
+	padding: 10px; 
+	margin: 20px 0 0 20px; 
+	background: hsla(0, 0%, 0%, .8); 
+}
+.mask p{
+	font-family: georgia; 
+	font-style: italic; 
+	font-size: 12px;
+	position: relative; 
+	color: #fff; 
+	padding: 10px 20px 20px; 
+	text-align: center; 
+}
+.mask a.info{
+	display: inline-block; 
+	text-decoration: none; 
+	padding: 7px 14px; 
+	background: #000; 
+	color:#fff;
+	text-transform: uppercase; 
+	box-shadow: 0 0 1px #000;  
+}
+.mask a.info:hover{
+	box-shadow: 0 0 5px #000;  }
+
+.imgG img{
+	-moz-transition: all 0.2s linear; 
+		transition: all 0.2s linear; 
+}
+.imgG .mask{
+	opacity: 0; 
+	transition:  all .2s ease-in-out; 
+	background: hsla(#000, 59%, 52%, 1); 
+}
+
+.mask h2{
+	opacity: 1;
+	transform: translateY(-100px); 
+	transition: all 0.2s ease-in-out;
+}
+.mask p{
+	opacity: 1;
+	transform: translateY(100px); 
+	transition: all 0.2s ease-in-out;
+}
+
+.mask a.info{
+	opacity: 1; 
+	transition: all 0.2s ease-in-out;
+}
+.imgG:hover img{
+	transform: scale(1.1); 
+}
+
+.imgG:hover .mask{
+	opacity: 1; 
+	
+}
+
+.imgG:hover h2, .imgG:hover p, .imgG:hover a.info{
+	transform: translateY(0px); 
+}
+
+.imgG:hover p{
+	transition-delay: .1s; 
+}
+
+.imgG:hover a.info{
+	transition-delay: .2s; 
+}
